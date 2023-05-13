@@ -1,0 +1,15 @@
+.home-header {
+    background-color: #D6D6D4;
+}
+
+.forimage {
+    background-image: url('images/bg2.jpg');
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+}
+
+.forimage h3 {
+    text-align: center;
+    color: white;
+}
