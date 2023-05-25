@@ -1,179 +1,102 @@
-<?php
-require("loginconn.php")
-    ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <?php include("./include/importhead.php") ?>
+    <?php include("./include/importcss.php") ?>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* style the container */
-        .container {
-            position: relative;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px 0 30px 0;
-        }
-
-        /* style inputs and link buttons */
-        input,
-        button,
-        .btn {
+        .login-page {
             width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            margin: 5px 0;
-            opacity: 0.85;
+            height: 100vh;
             display: inline-block;
-            font-size: 17px;
-            line-height: 20px;
-            text-decoration: none;
-            /* remove underline from anchors */
-        }
-
-        .btn {
+            display: flex;
             align-items: center;
         }
 
-        button {
-            background-color: #04AA6D;
-            color: white;
-            cursor: pointer;
+        .form-right i {
+            font-size: 100px;
         }
 
-        button:hover {
-            background-color: #45a049;
+        .bg-primary {
+            background-color: white !important;
         }
-
-
-        /* Two-column layout */
-        .col {
-            float: center;
-            width: 50%;
-            margin: auto;
-            padding: 0 50px;
-            margin-top: 6px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* bottom container */
-        .bottom-container {
-            text-align: center;
-            background-color: #666;
-            border-radius: 0px 0px 4px 4px;
-
-        }
-        .home-banner2 {
-  width: 100%;
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  font-family: sans-serif;
-  padding-top: var(--dl-space-space-threeunits);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
-  justify-content: space-between;
-}
-
     </style>
 </head>
 
 <body>
-    <div class="home-container">
-        <header data-role="Header" class="home-header" style="background-color: #D6D6D4;">
-            <div class="home-container1">
-                <a href="index.php" class="home-navlink">
-                    <img alt="image" src="images/200-200h.png" class="home-image" />
-                </a>
-            </div>
-            <div class="home-nav">
-                <a class="home-navlink">
-                    <nav class="navigation-links-nav navigation-links-root-class-name17">
-                        <a href="index.php" class="navigation-links-text"><span>Home</span></a>
-                        <a href="menu.html" class="navigation-links-text"><span>Menu</span></a>
-                        <a href="about.php" class="navigation-links-text">
-                            <span>About Us</span>
-                        </a>
-                        <a href="contact.php" class="navigation-links-text"><span>Contact</span></a>
-                    </nav>
-                </a>
-            </div>
-
-        </header>
+    <div>
+        <div class="home-container">
+            <?php include("./include/importheader.php") ?>
 
 
+            <div class="login-page bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h3 class="mb-3">Login Now</h3>
+                            <div class="bg-white shadow rounded">
+                                <div class="row">
+                                    <div class="col-md-7 pe-0">
+                                        <div class="form-left h-100 py-5 px-5">
+                                            <form action="" class="row g-4">
+                                                <div class="col-12">
+                                                    <label>Username<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text"><i class="bi bi-person-fill"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Username">
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-12">
+                                                    <label>Password<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text"><i class="bi bi-lock-fill"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Password">
+                                                    </div>
+                                                </div>
 
-
-        <div class="container">
-            <form method="post">
-                <div class="row">
-                    <h2 class="home-banner2" >Login</h2>
-                </div>
-                <div class="row">
-                    <div class="col" style="text-align: center;">
-
-                        <input type="text" placeholder="User Name" name="User_Name">
-                        <input type="password" placeholder="Password" name="User_Password">
-                        <button type="submit" name="SignIn">Sign In</button>
-                        <a href="signup.php" class="btn">Sign up</a>
-                        <a href="forgot.php" class="btn">Forgot password?</a>
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="inlineFormCheck">
+                                                        <label class="form-check-label" for="inlineFormCheck">Remember
+                                                            me</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit"
+                                                        class="btn btn-primary px-4 float-end mt-4">login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ps-0 d-none d-md-block">
+                                        <div class="form-right h-100 bg-primary text-white text-center pt-5">
+                                            <img style="height: 292px; width:405px; border-radius:10px;"
+                                                src="./images/pexels-arshad-sutar-1749303.jpg" alt="Coffee">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-            </form>
+            </div>
+
+
+            <?php include("./include/importjs.php") ?>
+            <?php include("./include/importfooter.php") ?>
+
         </div>
     </div>
-    <!-- <div class="bottom-container" style="">
-        <div class="row">
-            <div class="col">
-                <a href="signup.php" style="color:white" class="btn">Sign up</a>
-            </div>
-            <div class="col">
-                <a href="forgot.php" style="color:white" class="btn">Forgot password?</a>
-            </div>
-        </div>
-    </div> -->
-
-    <?php
-
-    if (isset($_POST['SignIn'])) {
-        $query = "SELECT * FROM `id_pass` WHERE `User_Name`= '$_POST[User_Name]' AND `User_Password`= '$_POST[User_Password]' ";
-        $result = mysqli_query($con, $query);
-        if (mysqli_num_rows($result) == 1) {
-            header("location: admin.php");
-            session_start();
-            $_SESSION['UserLoginId'] = $_POST['User_Name'];
-
-        } else if (mysqli_num_rows($result) == 1) {
-            session_start();
-            $_SESSION['UserLoginId'] = $_POST['User_Name'];
-            header("location: employee.php");
-        } else {
-            echo "<script> alert('Incorrect Password') </script>";
-        }
-    }
-
-    ?>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>

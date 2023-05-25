@@ -2,22 +2,7 @@
 <html>
 
 <head>
-  <title>My Coffee</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-
-  <style data-tag="reset-style-sheet">
-
-  </style>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-       <!--This is the head section-->
-    <!-- <style> ... </style> -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/menu.css">
 
 </head>
 
@@ -26,35 +11,6 @@
 
     <div class="home-container" style="overflow-x: hidden;">
       <?php include("./include/importheader.php") ?>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <figure>
-              <img src="./images/IMG.jpg" alt="Mountains">
-              <figcaption>Pratham Joshi</figcaption>
-            </figure>
-          </div>
-          <div class="col">
-            <figure style="--c:#fff5">
-              <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
-              <figcaption>Dhyey Patel</figcaption>
-            </figure>
-          </div>
-          <div class="col">
-            <figure>
-              <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
-              <figcaption>Pratham Joshi</figcaption>
-            </figure>
-          </div>
-          <div class="col">
-            <figure style="--c:#fff5">
-              <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
-              <figcaption>Dhyey Patel</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
 
       <div id="header">
         <h1>La Saveur</h1>
