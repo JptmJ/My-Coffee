@@ -129,7 +129,7 @@ a {
 }
 
 .navbar-nav {
-  padding-left: 66% !important;
+  padding-left: 60% !important;
 }
 
 .nav-item {
@@ -226,4 +226,21 @@ a {
     left: 0px;
     text-align: right;
   }
+}
+
+#btn-tbl {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#fonts-icon {
+  padding-right: 20px;
+}
+
+#fonts-icon:hover .fa {
+  transform: translateY(-5px);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  color: #f0f0f0;
 }

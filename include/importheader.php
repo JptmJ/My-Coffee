@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="menu.html">
+                    <a class="nav-link" href="menu.php">
                         Menu
                     </a>
                 </li>

@@ -4,6 +4,7 @@
 <head>
   <title>My Coffee</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -108,15 +109,19 @@
         <img alt="profile" src="images/pic4-800h.jpg" class="home-image5" />
       </div>
 
-      <div style="background-color: #00a7a2; margin-bottom: 5%; width: 100%; color: white;">
-        <div class="py-5">
+      <div style="background-color: #00a7a2; width: 100%; color: white;">
+        <div class="py-2">
           <h2 class="text-center py-3">Book A Table</h2>
           <h6 class="text-center py-2">Do It In Advance</h6>
         </div>
         <div class="w-50 m-auto">
-          <form name="contact" action="final.php" onsubmit="return fval()" method="post">
+          <a id="btn-tbl" href="menu.html">
+            <button class="button-86">
+              Book Table
+            </button>
+          </a>
 
-
+          <!-- <form name="contact" action="final.php" onsubmit="return fval()" method="post">
             <div class="form-group">
               <label>First Name</label>
               <input type="text" name="fname" autocomplete="off" class="form-control">
@@ -144,11 +149,11 @@
             <br>
             <br>
 
-          </form>
+          </form> -->
 
           <!--JAVA SCRIPT PORTION START-->
 
-          <script>
+          <!-- <script>
             function fval() {
               var fld0 = document.contact.fname.value;
               var fld1 = document.contact.lname.value;
@@ -197,11 +202,21 @@
                 return true;
               }
             }
-          </script>
+          </script> -->
 
           <!--JAVA SCRIPT PORTION END-->
         </div>
       </div>
+
+
+      <h3 class="py-3">
+        <i class="fa fa-location-dot"></i>
+        Our Location
+      </h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7411.3375938929385!2d72.14207639209496!3d21.754362220330922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a703e02e753%3A0x78062a95531b185f!2sThe%20Cafe%20Bistro!5e0!3m2!1sen!2sin!4v1684757423528!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <?php include("./include/importfooter.php") ?>
 
