@@ -1,3 +1,8 @@
+<style>
+    .fa {
+        color: black;
+    }
+</style>
 <footer class="home-footer" style="background-color: #98989c;">
     <div class="home-container5">
         <div class="home-logo">

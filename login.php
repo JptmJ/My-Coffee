@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .login-page {
-            width: 100%;
+            width: 90%;
             height: 100vh;
             display: inline-block;
             display: flex;

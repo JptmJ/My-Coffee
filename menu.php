@@ -18,52 +18,72 @@
     <div class="container">
       <div class="card">
         <div class="card-image">
-          <img
-            src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
+          <img src="./images/cap.jpg">
         </div>
         <div class="card-text">
-          <p class="card-meal-type">Breakfast/Eggs</p>
-          <h2 class="card-title">Délicieux Bénédicte</h2>
-          <p class="card-body">Eggs Benedict with hollandaise sauce, crispy bacon and an assortment of garden herbs.
+          <p class="card-meal-type">Drink</p>
+          <h2 class="card-title">Cappuccino</h2>
+          <p class="card-body">A cappuccino is a coffee drink made from a mixture of espresso and steamed milk.
           </p>
         </div>
-        <div class="card-price">$56</div>
+        <div class="card-price">₹133.50</div>
       </div>
       <div class="card">
         <div class="card-image">
-          <img
-            src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80">
+          <img src="./images/vegmag.jpg">
         </div>
         <div class="card-text">
-          <p class="card-meal-type">Lunch/Meat</p>
-          <h2 class="card-title">Du bœuf Burger</h2>
-          <p class="card-body">A beef burger with wholewheat patty, juicy lettuce and a side of gluten free fries</p>
+          <p class="card-meal-type">Breakfast/Meal</p>
+          <h2 class="card-title">Hot and Spicy with Vegetables Maggi</h2>
+          <p class="card-body">Hot and spicy Street Style Veggie Maggi Noodles is always a delight to our taste buds!
+          </p>
         </div>
-        <div class="card-price">$39</div>
+        <div class="card-price">₹114.50</div>
       </div>
       <div class="card">
         <div class="card-image">
-          <img
-            src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80">
+          <img src="./images/FF.jpg">
         </div>
         <div class="card-text">
-          <p class="card-meal-type">Soups/Meat</p>
-          <h2 class="card-title">Soupe à l’oignon</h2>
-          <p class="card-body">The traditional French soup made with onions and beef with a dollop of garlic and
-            saffaron mayonise.</p>
+          <p class="card-meal-type">Snacks</p>
+          <h2 class="card-title">Salt and Pepper Fries</h2>
+          <p class="card-body">The fries are fried till crispy on the outside while fluffy on the inside, and it is then
+            seasoned with my secret addicting salt and pepper seasoning.</p>
         </div>
-        <div class="card-price">$69</div>
+        <div class="card-price">₹114.50</div>
       </div>
       <div class="card">
         <div class="card-image">
-          <img src="https://www.expatica.com/app/uploads/sites/5/2020/03/Coq-au-vin.jpg">
+          <img src="./images/veg.jpg">
         </div>
         <div class="card-text">
-          <p class="card-meal-type">Appetizers/Meat</p>
-          <h2 class="card-title">Coq au Vin</h2>
-          <p class="card-body">Chickens doused in wine, mushrooms, pork, onions and garlic.</p>
+          <p class="card-meal-type">Italian Meal</p>
+          <h2 class="card-title">Vegetable Pizza [8.5 inches]</h2>
+          <p class="card-body">Red sauce, onion, capsicum, tomatoes, olives, mozzarella cheese.</p>
         </div>
-        <div class="card-price">$104</div>
+        <div class="card-price">₹243</div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="./images/marg.jpg">
+        </div>
+        <div class="card-text">
+          <p class="card-meal-type">Italian Meal</p>
+          <h2 class="card-title">Margherita Pizza [8.5 inches]</h2>
+          <p class="card-body">Red sauce and mozzarella cheese.</p>
+        </div>
+        <div class="card-price">₹209.60</div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="./images/mam.jpg">
+        </div>
+        <div class="card-text">
+          <p class="card-meal-type">Italian Meal</p>
+          <h2 class="card-title">Hot Mama Pizza [8.5 inches]</h2>
+          <p class="card-body">Red sauce, chilli flakes, green chillis, capsicum.</p>
+        </div>
+        <div class="card-price">₹243</div>
       </div>
     </div>
     <?php include("./include/importjs.php") ?>

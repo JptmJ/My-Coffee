@@ -61,7 +61,7 @@ body {
 }
 
 .card-title {
-    font-size: 2.2rem;
+    font-size: 25px;
     margin-bottom: 20px;
     margin-top: 5px;
 }
@@ -76,7 +76,7 @@ body {
     background-color: #970C0A;
     color: #fff;
     margin-left: auto;
-    font-size: 2rem;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
