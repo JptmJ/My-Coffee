@@ -24,6 +24,10 @@
         p {
             margin-bottom: 0 !important;
         }
+        .col img{
+            height: 445px;
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -76,7 +80,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="./images/IMG.jpg" alt="John" style="width:100%">
+                            <img src="./images/yash.jpeg" alt="John" style="width:100%">
                             <h4>Yash Pathak</h4>
                             <p class="title">Co-dealer & Support Developer</p>
                             <div style="margin: 10px 0;">
