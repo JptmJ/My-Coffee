@@ -33,15 +33,13 @@
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
-  font-family: 'Lexend Zetta', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lexend Zetta', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   margin: 0;
   line-height: 1.15;
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-
-
 }
 
 .card {
