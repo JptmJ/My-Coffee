@@ -100,7 +100,7 @@
           <h6 class="text-center py-2">Do It In Advance</h6>
         </div>
         <div class="w-50 m-auto">
-          <a id="btn-tbl" href="menu.html">
+          <a id="btn-tbl" href="login.php">
             <button class="button-86">
               Book Table
             </button>

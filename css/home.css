@@ -385,3 +385,10 @@
   margin-bottom: var(--dl-space-space-twounits);
   background-color: var(--dl-color-gray-900);
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .home-container6 {
+    margin-right: 0;
+  }
+}

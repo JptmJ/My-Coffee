@@ -1,3 +1,26 @@
+<?php
+
+require './config.php';
+if (isset($_POST["submit"])) {
+    $name = $_POST["name"];
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $confirmpassword = $_POST["confirmpassword"];
+    $duplicate = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
+    if (mysqli_num_rows($duplicate) > 0) {
+        echo "<script> alert('Username or Email Has Already Taken'); </script>";
+    } else {
+        if ($password == $confirmpassword) {
+            $query = "INSERT INTO tb_user VALUES('', '$name', '$username', '$email', '$password')";
+        } else {
+            echo "<script> alert('Password Does Not Match'); </script>";
+        }
+
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -62,19 +85,39 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
-                            <h3 class="mb-3">Login Now</h3>
+                            <h3 class="mb-3">Register Now</h3>
                             <div class="bg-white shadow rounded">
                                 <div class="row">
                                     <div class="col-md-7 pe-0">
                                         <div class="form-left h-100 py-5 px-5">
-                                            <form action="" class="row g-4">
+                                            <form method="POST" autocomplete="on" action="" class="row g-4">
                                                 <div class="col-12">
-                                                    <label>Email/Username<span class="text-danger">*</span></label>
+                                                    <label>Name<span class="text-danger">*</span></label>
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-person-fill"></i>
                                                         </div>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Your Email-id">
+                                                        <input required name="name" id="name" type="text"
+                                                            class="form-control" placeholder="Enter Your Fullname">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>Username<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text"><i class="bi bi-person-fill"></i>
+                                                        </div>
+                                                        <input required name="username" id="username" type="text"
+                                                            class="form-control" placeholder="Enter New Username">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>Email ID<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text"><i class="bi bi-person-fill"></i>
+                                                        </div>
+                                                        <input required name="email" id="email" type="text"
+                                                            class="form-control" placeholder="Enter Your Email-ID">
                                                     </div>
                                                 </div>
 
@@ -83,26 +126,24 @@
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-lock-fill"></i>
                                                         </div>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Password">
+                                                        <input required name="password" id="password" type="password"
+                                                            class="form-control" placeholder="Enter New Password">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-sm-6">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="inlineFormCheck">
-                                                        <label class="form-check-label" for="inlineFormCheck">Remember
-                                                            me</label>
-                                                    </div>
-                                                </div>
-
-                                                <a id="reg-link" href="register.php">
-                                                    <p>Not a user register here</p>
-                                                </a>
                                                 <div class="col-12">
-                                                    <button type="submit"
-                                                        class="btn btn-primary px-4 float-end mt-4">login</button>
+                                                    <label>Re-Enter Password<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text"><i class="bi bi-lock-fill"></i>
+                                                        </div>
+                                                        <input required name="confirmpassword" id="confirmpassword"
+                                                            type="password" class="form-control"
+                                                            placeholder="ReEnter New Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button name="submit" type="submit"
+                                                        class="btn btn-primary px-4 float-end mt-4">Register</button>
                                                 </div>
                                             </form>
                                         </div>
