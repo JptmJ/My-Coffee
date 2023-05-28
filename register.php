@@ -13,6 +13,8 @@ if (isset($_POST["submit"])) {
     } else {
         if ($password == $confirmpassword) {
             $query = "INSERT INTO tb_user VALUES('', '$name', '$username', '$email', '$password')";
+            mysqli_query($conn, $query);
+            echo "<script> alert('Registration Successful'); </script>";
         } else {
             echo "<script> alert('Password Does Not Match'); </script>";
         }
@@ -141,6 +143,11 @@ if (isset($_POST["submit"])) {
                                                             placeholder="ReEnter New Password">
                                                     </div>
                                                 </div>
+
+                                                <a id="reg-link" href="login.php">
+                                                    <p>Already have account login here</p>
+                                                </a>
+
                                                 <div class="col-12">
                                                     <button name="submit" type="submit"
                                                         class="btn btn-primary px-4 float-end mt-4">Register</button>

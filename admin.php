@@ -1,3 +1,7 @@
+<?php 
+require 'login.php'
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +16,7 @@
             <?php include("./include/importheader.php") ?>
             <form method="POST">
                 <a href="logout.php">
-                    <button class="buttun" name="LogOut">LOG OUT</button>
+                    <button class="buttun" name="logout">LOG OUT</button>
                 </a>
             </form>
 

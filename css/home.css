@@ -392,3 +392,7 @@
     margin-right: 0;
   }
 }
+
+.bg-primary {
+  background-color: none !important;
+}

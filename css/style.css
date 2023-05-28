@@ -242,3 +242,7 @@ a {
   transition: all .3s ease-in-out;
   color: #f0f0f0;
 }
+
+.bg-primary {
+  background-color: none !important;
+}

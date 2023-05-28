@@ -1,3 +1,32 @@
+<?php 
+
+require 'config.php';
+if (isset($_POST["submit"])) {
+    $usernameemail = $_POST["usernameemail"];
+    $password = $_POST["password"];
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$usernameemail' OR email = '$usernameemail'");
+    $row = mysqli_fetch_assoc($result);
+    if (mysqli_num_rows($result) > 0) {
+        if ($password == $row["password"]) {
+            $_SESSION["login"] = true;
+            $_SESSION["id"] = $row["id"];
+            header("Location:admin.php");
+        } else {
+            echo
+            "<script> alert('Wrong Password') </script>";
+        }
+        
+    } else {
+        # code...
+    }
+    
+} else {
+    
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -67,13 +96,13 @@
                                 <div class="row">
                                     <div class="col-md-7 pe-0">
                                         <div class="form-left h-100 py-5 px-5">
-                                            <form action="" class="row g-4">
+                                            <form method="POST" action="" class="row g-4">
                                                 <div class="col-12">
                                                     <label>Email/Username<span class="text-danger">*</span></label>
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-person-fill"></i>
                                                         </div>
-                                                        <input type="text" class="form-control"
+                                                        <input name="usernameemail" required id="usernameemail" type="text" class="form-control"
                                                             placeholder="Enter Your Email-id">
                                                     </div>
                                                 </div>
@@ -83,7 +112,7 @@
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-lock-fill"></i>
                                                         </div>
-                                                        <input type="text" class="form-control"
+                                                        <input name="password" required id="password" type="password" class="form-control"
                                                             placeholder="Enter Password">
                                                     </div>
                                                 </div>
@@ -98,10 +127,11 @@
                                                 </div>
 
                                                 <a id="reg-link" href="register.php">
-                                                    <p>Not a user register here</p>
+                                                    <p>Don't have account register here</p>
                                                 </a>
+
                                                 <div class="col-12">
-                                                    <button type="submit"
+                                                    <button name="submit" type="submit"
                                                         class="btn btn-primary px-4 float-end mt-4">login</button>
                                                 </div>
                                             </form>
