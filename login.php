@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 require 'config.php';
 if (isset($_POST["submit"])) {
     $usernameemail = $_POST["usernameemail"];
@@ -13,15 +12,15 @@ if (isset($_POST["submit"])) {
             header("Location:admin.php");
         } else {
             echo
-            "<script> alert('Wrong Password') </script>";
+                "<script> alert('Wrong Password') </script>";
         }
-        
+
     } else {
-        # code...
+
     }
-    
+
 } else {
-    
+
 }
 
 
@@ -102,7 +101,8 @@ if (isset($_POST["submit"])) {
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-person-fill"></i>
                                                         </div>
-                                                        <input name="usernameemail" required id="usernameemail" type="text" class="form-control"
+                                                        <input name="usernameemail" required id="usernameemail"
+                                                            type="text" class="form-control"
                                                             placeholder="Enter Your Email-id">
                                                     </div>
                                                 </div>
@@ -112,8 +112,8 @@ if (isset($_POST["submit"])) {
                                                     <div class="input-group">
                                                         <div class="input-group-text"><i class="bi bi-lock-fill"></i>
                                                         </div>
-                                                        <input name="password" required id="password" type="password" class="form-control"
-                                                            placeholder="Enter Password">
+                                                        <input name="password" required id="password" type="password"
+                                                            class="form-control" placeholder="Enter Password">
                                                     </div>
                                                 </div>
 
