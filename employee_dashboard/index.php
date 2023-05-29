@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     .fa {
       font-size: 17px;
@@ -306,31 +307,43 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="memployee.php">
-              <i class="fa fa-users"></i>
-              <span class="menu-title">Manage Employees</span>
+            <a class="nav-link" href="booktable.php">
+              <i class="fa fa-table"></i>
+              <span class="menu-title">Book A Table</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="mfood.php">
+            <a class="nav-link" href="food.php">
               <i class="fa fa-utensils"></i>
-              <span class="menu-title">Manage Food</span>
+              <span class="menu-title">Our Food</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aprofile.php">
+            <a class="nav-link" href="ohistory.php">
+              <i class="fa fa-history"></i>
+              <span class="menu-title">Order History</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="booking.php">
+              <i class="fa fa-book"></i>
+              <span class="menu-title">Your Booking</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.php">
               <i class="fa fa-user"></i>
               <span class="menu-title">Profile</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="asettings.php">
+            <a class="nav-link" href="settings.php">
               <i class="fa fa-gear"></i>
               <span class="menu-title">Settings</span>
             </a>
