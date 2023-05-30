@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         if(isset($_SESSION['cart']))
         {
-            $myitems=array_column($_SESSION['cart']),'Item_Name');
+            $myitems=array_column($_SESSION['cart']), 'Item_Name');
             if(in_array($_POST['Item_Name'],$myitems))
             {
                 echo
