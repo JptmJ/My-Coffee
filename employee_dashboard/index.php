@@ -24,13 +24,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <style>
-    .fa {
-      font-size: 17px;
-      padding-right: 10px;
-    }
-  </style>
+  <<<<<<< HEAD=======>>>>>>> a2c442b1a48d369e2528eaa92ffa5da85159cb34
+    <style>
+      .fa {
+        font-size: 17px;
+        padding-right: 10px;
+      }
+    </style>
 </head>
 
 <body>
@@ -326,9 +326,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ohistory.php">
+            <a class="nav-link" href="usercart.php">
               <i class="fa fa-history"></i>
-              <span class="menu-title">Order History</span>
+              <span class="menu-title">Cart</span>
             </a>
           </li>
           <li class="nav-item">
