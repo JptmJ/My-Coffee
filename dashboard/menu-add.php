@@ -80,7 +80,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label class="control-label">Area</label>
+													<label class="control-label">Sub section</label>
 													<select data-plugin-selectTwo class="form-control populate" name="food_type" required="">
 														<option value=""> -Select- </option>
 														<option value="Fast Food">Fast Food</option>
