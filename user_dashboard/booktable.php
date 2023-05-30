@@ -261,7 +261,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cart.php">
+                        <a class="nav-link" href="usercart.php">
                             <i class="fa fa-cart-shopping"></i>
                             <span class="menu-title">Cart</span>
                         </a>
