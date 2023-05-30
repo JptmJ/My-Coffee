@@ -23,9 +23,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <<<<<<< HEAD=======>>>>>>> a2c442b1a48d369e2528eaa92ffa5da85159cb34
+
     <style>
-      .fa {
+      .fa{
         font-size: 17px;
         padding-right: 10px;
       }
@@ -314,20 +314,19 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="booktable.php">
-              <i class="fa fa-table"></i>
               <span class="menu-title">Book A Table</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="food.php">
-              <i class="fa fa-utensils"></i>
+              <i class="icon-columns menu-icon"></i>
               <span class="menu-title">Our Food</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="usercart.php">
-              <i class="fa fa-history"></i>
-              <span class="menu-title">Cart</span>
+            <a class="nav-link" href="ohistory.php">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Order History</span>
             </a>
           </li>
           <li class="nav-item">
