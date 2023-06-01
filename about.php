@@ -54,7 +54,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="./images/IMG.jpg" alt="John" style="width:100%">
+                            <img src=".\images\dhyey.jpg" alt="John" style="width:100%">
                             <h4>Dhyey Patel</h4>
                             <p class="title">Full Stack Developer</p>
                             <div style="margin: 10px 0;">
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="./images/IMG.jpg" alt="John" style="width:100%">
+                            <img src=".\images\arman.jpg" alt="John" style="width:100%">
                             <h4>Arman Varaiya</h4>
                             <p class="title">Dealer</p>
                             <div style="margin: 10px 0;">

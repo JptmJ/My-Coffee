@@ -51,16 +51,16 @@
                                     <h4>Contact Info</h4>
                                     <div class="d-flex info_single align-items-center">
                                         <i class="fa fa-phone"></i>
-                                        <span>+91 8009 054294</span>
+                                        <span>+91 9574020739</span>
                                     </div>
                                     <div class="d-flex info_single align-items-center">
                                         <i class="fa fa-envelope"></i>
-                                        <span>info@flightmantra.com</span>
+                                        <span>thecafebistro3@yahoo.com</span>
                                     </div>
                                     <div class="d-flex info_single align-items-center">
                                         <i class="fa fa-location-dot"></i>
-                                        <span>1000+ Travel partners and 65+ Service city across India, USA, Canada &
-                                            UAE</span>
+                                        <span>Shop No 5/6, Sumeru Arcade, Rupani Circle, Bhavnagar - 364002
+                                        </span>
                                     </div>
 
                                 </div>
