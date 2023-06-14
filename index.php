@@ -11,7 +11,7 @@
     <div class="home-container">
       <?php include("./include/importheader.php") ?>
       <div class="home-banner">
-        <h1 class="home-text">MY COFFEE</h1>
+        <h1 class="home-text" >MY COFFEE</h1>
         <span class="home-text01" style="width:70%;">
           We are coffee punks who don't exaggerate about their Americanos.
           Time, temperature, and technique need to be on point to make the
@@ -21,11 +21,11 @@
         <img alt="image" src="images/pic1-800h.jpg" class="home-image2" />
       </div>
       <div class="home-features">
-        <h1 class="home-text02">
+        <h1 class="home-text02" >
           ORDER FRESHLY BAKED GOODS OR VISIT MY COFFEE
         </h1>
         <div class="home-container3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem;">
             <img src="images/pic2-600w.jpg" class="card-img-top" alt="...">
             <div style="height: 220px;" class="card-body">
               <h5>FOOD MART</h5>
@@ -34,7 +34,7 @@
                 our place. Come and visit ones with your loved one.</p>
             </div>
           </div>
-          <div class="card" style="width: 20rem;">
+          <div class="card" style="width: 20rem; margin-left:25px; ">
             <img src="images/pic3-600w.jpg" class="card-img-top" alt="...">
             <div style="height: 220px;" class="card-body">
               <h5>MY CAFE</h5>
