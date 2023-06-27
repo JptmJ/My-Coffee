@@ -105,6 +105,7 @@ if (isset($_POST['reservation'])) {
       </div>
     </section>
 
+    <?php include 'template/footer.php'; ?>
     <?php include 'template/script.php'; ?>
 
   </body>
