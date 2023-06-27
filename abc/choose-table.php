@@ -9,6 +9,13 @@ if (isset($_POST['reservation'])) {
   $reservation_date = $_POST['reservation_date'];
   $reservation_time = $_POST['reservation_time'];
 
+  $timestamp = time();
+  $today = date('Y-m-d', $timestamp);
+  if ($reservation_date < $today) {
+    echo "<script>alert('Please select proper date!');
+    window.location.href='reservation.php?res_id=1';</script>";
+  }
+
   include 'template/header.php'; ?>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -84,7 +91,7 @@ if (isset($_POST['reservation'])) {
                     <?php } ?>
                     <div class="col-lg-12" style="margin-top: 15%;text-align: center;">
                       <div class="form-group">
-                        <select style="display: none;" >
+                        <select style="display: none;">
                           <option></option>
                         </select>
                         <input type="hidden" name="res_id" value="<?php echo $res_id; ?>">
